@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morada Vitória · Linha Premium Morar a 5 min da orla de Camburi | Luz Imóveis</title>
+<meta name="description" content="Morada Vitória Residencial Clube, linha premium da Morar, no Bairro de Fátima, a 300 m de Jardim Camburi. Apartamentos de 2 e 3 quartos com suíte e varanda, de 59 a 74 m², com vista para a reserva e lazer completo. Atendimento Luz Imóveis.">
+<meta property="og:title" content="Morada Vitória · A 5 minutos da orla de Camburi | Luz Imóveis">
+<meta property="og:description" content="2 e 3 quartos com suíte e varanda, vista para a reserva e lazer completo climatizado. Entrada a partir de 10%.">
+<meta property="og:image" content="assets/img/fachada-entardecer.jpg">
+<meta name="theme-color" content="#0a3653">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#14679a; --blue-d:#0d4a70; --blue-dd:#0a3653; --blue-l:#e7f1f8;
+  --orange:#f26a0a; --orange-d:#d95c04; --orange-l:#fff1e6;
+  --ink:#1d2430; --muted:#5f6673; --line:#e6e8ec;
+  --bg-2:#f6f7f9; --stone:#f5f2ee; --ok:#1f9d5c; --wa:#25D366;
+  --shadow:0 20px 50px -24px rgba(10,54,83,.35);
+  --h:'Plus Jakarta Sans',system-ui,sans-serif; --b:'Inter',system-ui,sans-serif; --mark:'Jost',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--b);color:var(--ink);background:#fff;font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+button,input,select{font:inherit}
+h1,h2,h3{font-family:var(--h);line-height:1.12;letter-spacing:-.02em;color:var(--blue-dd)}
+.wrap{width:min(1200px,100% - 32px);margin-inline:auto}
+section{padding:80px 0}
+.tag{display:inline-flex;align-items:center;font:700 12px/1 var(--h);letter-spacing:.08em;text-transform:uppercase;color:var(--orange);background:var(--orange-l);padding:8px 12px;border-radius:8px;margin-bottom:16px}
+.title{font-size:clamp(28px,3.8vw,44px);font-weight:800;max-width:22ch;text-wrap:balance}
+.title .hl{color:var(--blue);background:linear-gradient(transparent 66%,rgba(242,106,10,.22) 66%,rgba(242,106,10,.22) 92%,transparent 92%);-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.sub{font-size:clamp(16px,1.5vw,18px);color:var(--muted);max-width:60ch;margin-top:14px}
+.head{margin-bottom:36px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 16px/1 var(--h);padding:18px 26px;border-radius:14px;border:0;cursor:pointer;text-decoration:none;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-o{background:var(--orange);color:#fff;box-shadow:0 12px 26px -12px rgba(242,106,10,.8)}
+.btn-o:hover{background:var(--orange-d)}
+.btn-b{background:var(--blue);color:#fff}.btn-b:hover{background:var(--blue-d)}
+.btn-line{background:#fff;color:var(--blue);border:2px solid var(--blue)}
+.fine{font-size:12.5px;color:var(--muted)}
+
+/* marca do empreendimento (texto) */
+.mv{display:inline-flex;flex-direction:column;line-height:1;font-family:var(--mark);color:var(--blue-dd)}
+.mv b{font-weight:400;font-size:22px;letter-spacing:.06em}
+.mv small{font-weight:300;font-size:10.5px;letter-spacing:.34em;margin-top:3px}
+
+/* topo */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand .luz{height:52px;width:auto}
+.brand .div{width:1px;height:34px;background:var(--line)}
+.top .btn{padding:13px 20px;font-size:14.5px}
+
+/* hero */
+.hero{background:linear-gradient(180deg,var(--blue-l) 0%,#fff 90%);padding:48px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(32px,4.8vw,56px);font-weight:800;text-wrap:balance}
+.hero h1 .o{color:var(--orange)}
+.hero .sub{font-size:clamp(16px,1.6vw,19px)}
+.offer{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:26px 0 24px;max-width:560px}
+.offer div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.offer b{display:block;font:800 19px/1.15 var(--h);color:var(--blue-dd)}
+.offer b.o{color:var(--orange)}
+.offer span{font-size:13.5px;color:var(--muted);line-height:1.3;display:block;margin-top:2px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.hero-pic{position:relative;border-radius:28px;overflow:hidden;box-shadow:var(--shadow)}
+.hero-pic img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 40%}
+.hero-pic .price{position:absolute;left:18px;bottom:18px;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:0 14px 34px -14px rgba(0,0,0,.4)}
+.hero-pic .price small{display:block;font:600 13px var(--h);color:var(--muted)}
+.hero-pic .price b{display:block;font:800 30px/1.05 var(--h);color:var(--orange)}
+.hero-pic .price span{font:600 12px var(--h);color:var(--blue);text-transform:uppercase;letter-spacing:.06em}
+
+/* carrossel */
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(250px,24%);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;scrollbar-width:thin}
+.card{scroll-snap-align:start;background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+.pic{position:relative;cursor:zoom-in;display:block;width:100%;border:0;padding:0;background:var(--bg-2)}
+.pic img{width:100%;transition:transform .5s}
+.pic:hover img{transform:scale(1.04)}
+.card .pic img{aspect-ratio:4/3;object-fit:cover}
+.card .bd{padding:14px 16px 18px}
+.card h3{font-size:16.5px;margin-bottom:2px}
+.card p{font-size:14px;color:var(--muted)}
+.rail-nav{display:flex;gap:10px;justify-content:flex-end;margin-bottom:14px}
+.rail-nav button{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);background:#fff;color:var(--blue);font-size:19px;cursor:pointer}
+
+/* apartamento */
+.vtour{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:56px;align-items:center;margin-bottom:40px}
+.vid{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:9/16;background:#000;box-shadow:var(--shadow)}
+.vid video{width:100%;height:100%;object-fit:cover}
+.vid .lbl{position:absolute;top:14px;left:14px;background:var(--orange);color:#fff;font:700 12px/1 var(--h);padding:8px 12px;border-radius:8px}
+.quote{font:800 clamp(23px,2.8vw,34px)/1.25 var(--h);color:var(--blue-dd);letter-spacing:-.01em;text-wrap:balance}
+.quote span{color:var(--orange)}
+.vlist{list-style:none;display:grid;gap:10px;margin:20px 0 26px}
+.vlist li{display:flex;gap:12px;align-items:center;font-size:15.5px;color:var(--muted)}
+.vlist li::before{content:"";flex:none;width:22px;height:22px;border-radius:50%;background:var(--orange-l) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='9'%3E%3Cpath d='M1 4.5l3 3L10 1' stroke='%23f26a0a' stroke-width='2.2' fill='none'/%3E%3C/svg%3E") center no-repeat}
+
+/* plantas */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pc{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.pc .pimg{aspect-ratio:4/3;display:grid;place-items:center;padding:12px;border-bottom:1px solid var(--line);cursor:zoom-in;position:relative;background:#fff}
+.pc .pimg img{max-height:100%;object-fit:contain}
+.pc .badge{position:absolute;top:10px;left:10px;background:var(--orange);color:#fff;font:700 10.5px/1 var(--h);letter-spacing:.08em;padding:6px 8px;border-radius:6px}
+.pc .bd{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.pc h3{font-size:17px}
+.pc .m{font:800 15px var(--h);color:var(--blue);margin:2px 0 8px}
+.pc p{font-size:14px;color:var(--muted);flex:1}
+.pc .btn{margin-top:14px;padding:13px;font-size:14px;width:100%}
+
+/* lazer */
+.lazer{background:var(--stone)}
+.lzg{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.lzc{background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+.lzc .pic img{aspect-ratio:4/3;object-fit:cover}
+.lzc.big{grid-column:span 2}.lzc.big .pic img{aspect-ratio:16/9.2}
+.lzc .bd{padding:14px 18px 18px}
+.lzc h3{font-size:16.5px;margin-bottom:2px}.lzc.big h3{font-size:19px}
+.lzc p{font-size:14px;color:var(--muted);line-height:1.5}
+.more{margin-top:18px;font-size:15px;color:var(--muted)}
+.more b{color:var(--blue-dd);font-family:var(--h)}
+
+/* localização */
+.loc{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.loc .ph{border-radius:24px;overflow:hidden;cursor:zoom-in;box-shadow:var(--shadow)}
+.loc .ph img{width:100%}
+.near{list-style:none;display:grid;gap:12px;margin:22px 0}
+.near li{display:flex;gap:14px;align-items:center}
+.near .ic{flex:none;width:42px;height:42px;border-radius:12px;background:var(--blue-l);display:grid;place-items:center;font-size:19px}
+.near b{display:block;font:700 15.5px/1.3 var(--h);color:var(--blue-dd)}
+.near small{font-size:13.5px;color:var(--muted)}
+.addr{font:600 15px var(--h);color:var(--blue-dd);margin-bottom:18px}
+.orla{margin-top:36px;position:relative;border-radius:24px;overflow:hidden;cursor:zoom-in}
+.orla img{width:100%;aspect-ratio:16/8.5;object-fit:cover;object-position:50% 8%}
+.orla span{position:absolute;left:18px;bottom:18px;background:rgba(10,54,83,.85);color:#fff;font:700 14px/1.2 var(--h);padding:10px 14px;border-radius:10px}
+
+/* cadastro */
+.cad{background:linear-gradient(180deg,#fff 0%,var(--blue-l) 100%)}
+.cad-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.steps{list-style:none;counter-reset:s;display:grid;gap:14px;margin:26px 0}
+.steps li{counter-increment:s;display:flex;gap:14px;align-items:center;font-size:15.5px;color:var(--muted)}
+.steps li::before{content:counter(s);flex:none;width:34px;height:34px;border-radius:10px;background:var(--orange);color:#fff;font:800 16px/34px var(--h);text-align:center}
+.steps b{color:var(--blue-dd);font-family:var(--h)}
+.cad-luz{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 16px;max-width:400px}
+.cad-luz img{height:58px;width:auto}
+.cad-luz p{font-size:14px;color:var(--muted)}
+.cad-luz b{display:block;font:700 15.5px var(--h);color:var(--blue-dd)}
+.form{background:#fff;border-radius:24px;padding:30px;box-shadow:0 30px 70px -30px rgba(13,74,112,.45);border:1px solid var(--line);position:relative}
+.form .ribbon{position:absolute;top:-14px;left:30px;background:var(--orange);color:#fff;font:700 12px/1 var(--h);letter-spacing:.06em;text-transform:uppercase;padding:9px 13px;border-radius:8px}
+.form h2{font-size:23px;margin:6px 0 4px}
+.form .hint{font-size:14.5px;color:var(--muted);margin-bottom:18px}
+.f{margin-bottom:13px}
+.f label{display:block;font:600 13.5px var(--h);color:var(--blue-dd);margin-bottom:6px}
+.f input,.f select{width:100%;font-size:16px;padding:13px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--bg-2);color:var(--ink);appearance:none}
+.f select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2314679a' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+.f input:focus,.f select:focus{outline:none;border-color:var(--blue);background:#fff;box-shadow:0 0 0 4px var(--blue-l)}
+.f.bad input{border-color:#d93025}
+.form .btn{width:100%;margin-top:6px}
+.form .fine{text-align:center;margin-top:12px}
+.form .err{display:none;color:#d93025;font-size:14px;margin-top:10px;text-align:center}
+.done{display:none;text-align:center;padding:20px 4px}
+.done .ok{width:64px;height:64px;border-radius:50%;background:#e5f6ed;color:var(--ok);display:grid;place-items:center;margin:0 auto 16px}
+.done .ok svg{width:32px;height:32px}
+.done h2{font-size:24px;margin-bottom:8px}
+.done p{color:var(--muted)}
+.form.sent form{display:none}.form.sent .done{display:block}
+
+/* faq */
+.faq{max-width:820px;margin:0 auto;display:grid;gap:10px}
+.faq details{background:var(--bg-2);border-radius:14px;padding:0 20px}
+.faq details[open]{background:#fff;box-shadow:var(--shadow)}
+.faq summary{list-style:none;cursor:pointer;padding:18px 34px 18px 0;font:700 16px/1.4 var(--h);color:var(--blue-dd);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:2px;top:50%;width:11px;height:11px;margin-top:-8px;border-right:2.5px solid var(--orange);border-bottom:2.5px solid var(--orange);transform:rotate(45deg);transition:.2s}
+.faq details[open] summary::after{transform:rotate(225deg);margin-top:-3px}
+.faq details p{padding:0 0 18px;color:var(--muted)}
+
+footer{background:var(--blue-dd);color:rgba(255,255,255,.65);font-size:12.5px;padding:44px 0 120px}
+.fgrid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center;margin-bottom:22px}
+.fgrid .logos{display:flex;align-items:center;gap:20px}
+.fgrid .lw{background:#fff;border-radius:14px;padding:8px 12px}
+.fgrid .lw img{height:64px;width:auto}
+.fgrid .mv{color:#fff}
+.fgrid .ct{color:#fff;font:600 14.5px/1.5 var(--h)}
+.fgrid .ct small{display:block;font:400 12.5px var(--b);color:rgba(255,255,255,.6)}
+footer p{max-width:120ch;margin-bottom:8px}
+
+/* WhatsApp: só informações */
+.wa{position:fixed;right:18px;bottom:18px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 28px -6px rgba(0,0,0,.4);transition:transform .2s,bottom .25s}
+.wa:hover{transform:scale(1.08)}
+.wa svg{width:33px;height:33px;color:#fff}
+.bar{display:none}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(10,30,45,.94);display:none;align-items:center;justify-content:center;padding:24px}
+.lb.on{display:flex}
+.lb img{max-width:min(1300px,100%);max-height:84vh;border-radius:12px;background:#fff}
+.lb button{position:absolute;background:rgba(255,255,255,.15);color:#fff;border:0;width:52px;height:52px;border-radius:50%;font-size:26px;cursor:pointer}
+.lb .x{top:18px;right:18px}.lb .pv{left:18px;top:50%}.lb .nx{right:18px;top:50%}
+.lb .cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#fff;font:600 15px var(--h)}
+
+.rv{opacity:0;transform:translateY(16px);transition:opacity .55s,transform .55s}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+@media (max-width:1080px){
+  .hero-grid,.vtour,.loc,.cad-grid{grid-template-columns:1fr;gap:32px}
+  .vtour .vid{max-width:320px;width:100%;margin-inline:auto}
+  .plans{grid-template-columns:repeat(3,1fr)}
+  .lzg{grid-template-columns:1fr 1fr}
+  .rail{grid-auto-columns:minmax(240px,40%)}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  section{padding:52px 0}
+  .head{margin-bottom:24px}
+  .brand .luz{height:42px}.brand{gap:10px}
+  .top .mv b{font-size:18px}.top .mv small{font-size:9px}
+  .top .wrap{height:64px}
+  .top .btn{display:none}
+  .hero{padding:24px 0 40px}
+  .hero-grid{gap:22px}
+  .hero h1{font-size:29px}
+  .hero .sub{font-size:15.5px;margin-top:10px}
+  .offer{margin:18px 0;gap:8px}
+  .offer div{padding:11px 12px}
+  .offer b{font-size:17px}.offer span{font-size:12.5px}
+  .cta-row .btn{width:100%}
+  .cta-row .btn-line{display:none}
+  .hero-pic img{aspect-ratio:16/11}
+  .hero-pic .price{left:12px;bottom:12px;padding:10px 14px}
+  .hero-pic .price b{font-size:22px}
+  .vtour{margin-bottom:24px;gap:22px}
+  .vtour .vid{max-width:250px}
+  .vlist{display:none}
+  .quote{font-size:21px;text-align:center}
+  .vtour .btn{width:100%;margin-top:18px}
+  #rail-ap{margin-top:12px}
+  .rail{grid-auto-columns:72%}
+  .rail-nav{display:none}
+  .plans{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:72%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}
+  .pc{scroll-snap-align:start}
+  .lzg{gap:10px}
+  .lzc .bd{padding:10px 12px 14px}
+  .lzc h3{font-size:14.5px}.lzc.big h3{font-size:16px}
+  .lzc p{display:none}
+  .near{margin:16px 0}
+  .loc{gap:20px}
+  .loc .btn{width:100%}
+  .orla img{aspect-ratio:4/3;object-position:58% 0%}
+  .cad-grid{gap:28px}
+  .steps{margin:18px 0}
+  .cad-luz{display:none}
+  .form{padding:24px 18px}
+  .faq summary{font-size:15px}
+  .bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:55;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -10px 30px -18px rgba(0,0,0,.35);transform:translateY(110%);transition:transform .25s}
+  .bar.on{transform:none}
+  .bar .btn{flex:1;padding:16px;font-size:15.5px}
+  .wa{width:54px;height:54px;right:14px;bottom:16px}
+  .wa svg{width:30px;height:30px}
+  body.bar-on .wa{bottom:86px}
+  footer{padding-bottom:110px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Luz Imóveis, Morada Vitória">
+      <img class="luz" src="assets/img/logo-luz.png" alt="Luz Imóveis">
+      <span class="div" aria-hidden="true"></span>
+      <span class="mv" aria-label="Morada Vitória"><b>MORADA</b><small>VITÓRIA</small></span>
+    </a>
+    <a class="btn btn-o" href="#cadastro">Quero conhecer</a>
+  </div>
+</header>
+
+<main>
+<!-- 1. TOPO -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag rv">Linha Premium Morar · Sua escolha é viver bem</span>
+      <h1 class="rv">A tranquilidade do Bairro de Fátima com o <span class="o">estilo de vida</span> de Jardim Camburi.</h1>
+      <p class="sub rv">Residencial clube com vista para a reserva, a 300 metros de Jardim Camburi e a 5 minutos da orla. Apartamentos de 2 e 3 quartos com suíte e varanda, de 59 a 74 m².</p>
+      <div class="offer rv">
+        <div><b class="o">10% de entrada</b><span>e o saldo financiado pelo banco</span></div>
+        <div><b>R$ 18 mil</b><span>de renda familiar para financiar</span></div>
+        <div><b>59 a 74 m²</b><span>2 e 3 quartos com suíte e varanda</span></div>
+        <div><b>Lazer completo</b><span>academia, gourmet e salão climatizados</span></div>
+      </div>
+      <div class="cta-row rv">
+        <a class="btn btn-o" href="#cadastro">Quero receber a tabela e as plantas</a>
+        <a class="btn btn-line" href="#apartamento">Ver o apartamento</a>
+      </div>
+    </div>
+    <div class="hero-pic rv">
+      <img src="assets/img/fachada-entardecer.jpg" alt="Fachada do Morada Vitória ao entardecer">
+      <div class="price"><small>Entrada a partir de</small><b>10%</b><span>Linha premium Morar</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. APARTAMENTO -->
+<section id="apartamento" style="padding-top:24px">
+  <div class="wrap">
+    <div class="head">
+      <span class="tag rv">O apartamento</span>
+      <h2 class="title rv">Arquitetura que traduz conforto, <span class="hl">elegância e identidade.</span></h2>
+    </div>
+    <div class="vtour">
+      <div class="vid rv">
+        <video id="tour" src="assets/video/maquete.mp4" poster="assets/video/maquete-poster.jpg" muted loop playsinline preload="metadata" aria-label="Vídeo da maquete do Morada Vitória"></video>
+        <span class="lbl">▶ Maquete do residencial</span>
+      </div>
+      <div>
+        <p class="quote rv">“O café sem pressa, o pôr do sol na varanda, <span>o mergulho no fim da tarde</span>.”</p>
+        <ul class="vlist rv">
+          <li>Varanda com guarda-corpo de vidro em todas as unidades do 2º ao 10º andar*</li>
+          <li>Porcelanato retificado, forro de gesso e bancada de mármore nos banheiros</li>
+          <li>Gás natural encanado e infraestrutura para ar-condicionado em todos os quartos</li>
+          <li>Portaria 24h com reconhecimento facial e câmeras</li>
+        </ul>
+        <a class="btn btn-o rv" href="#cadastro">Quero agendar uma visita</a>
+      </div>
+    </div>
+    <div class="rail-nav"><button type="button" data-rail="rail-ap" data-dir="-1" aria-label="Fotos anteriores">←</button><button type="button" data-rail="rail-ap" data-dir="1" aria-label="Próximas fotos">→</button></div>
+    <div class="rail" id="rail-ap" data-gallery>
+      <article class="card"><button class="pic" data-cap="Sala integrada com a varanda (perspectiva ilustrativa)"><img src="assets/img/sala.jpg" alt="Sala integrada com varanda" loading="lazy"></button><div class="bd"><h3>Sala</h3><p>Integrada com a varanda e cheia de luz natural.</p></div></article>
+      <article class="card"><button class="pic" data-cap="Varanda (perspectiva ilustrativa)"><img src="assets/img/varanda.jpg" alt="Varanda com vista para o verde" loading="lazy"></button><div class="bd"><h3>Varanda</h3><p>Guarda-corpo de vidro e vista para o verde.</p></div></article>
+      <article class="card"><button class="pic" data-cap="Cozinha e área de serviço (perspectiva ilustrativa)"><img src="assets/img/cozinha.jpg" alt="Cozinha" loading="lazy"></button><div class="bd"><h3>Cozinha</h3><p>Bancada em granito e ponto de água para filtro.</p></div></article>
+      <article class="card"><button class="pic" data-cap="Quarto suíte (perspectiva ilustrativa)"><img src="assets/img/quarto-suite.jpg" alt="Quarto suíte" loading="lazy"></button><div class="bd"><h3>Suíte</h3><p>Banheiro com bancada de mármore.</p></div></article>
+      <article class="card"><button class="pic" data-cap="Quarto 01 (perspectiva ilustrativa)"><img src="assets/img/quarto-01.jpg" alt="Quarto" loading="lazy"></button><div class="bd"><h3>Quarto</h3><p>Pronto para receber o ar-condicionado split.</p></div></article>
+      <article class="card"><button class="pic" data-cap="Quarto reversível (perspectiva ilustrativa)"><img src="assets/img/quarto-reversivel.jpg" alt="Quarto reversível" loading="lazy"></button><div class="bd"><h3>Quarto reversível</h3><p>Home office, quarto de hóspedes ou closet.</p></div></article>
+    </div>
+    <p class="fine" style="margin-top:8px">*Exceto coluna 6. Perspectivas ilustrativas; móveis e decoração não fazem parte do contrato. Acabamentos conforme Memorial Descritivo.</p>
+  </div>
+</section>
+
+<!-- 3. PLANTAS -->
+<section id="plantas" style="background:var(--bg-2)">
+  <div class="wrap">
+    <div class="head">
+      <span class="tag rv">Plantas</span>
+      <h2 class="title rv">Espaços que convidam <span class="hl">a desacelerar.</span></h2>
+      <p class="sub rv">Plantas de 59 a 74 m², todas com suíte e varanda, do 2º ao 10º andar.</p>
+    </div>
+    <div class="plans">
+      <article class="pc rv"><div class="pimg" data-zoom="assets/img/pl-2q-suite-varanda-5926.jpg" data-cap="2 quartos com suíte e varanda · 59,26 m² (planta ilustrativa)"><img src="assets/img/pl-2q-suite-varanda-5926.jpg" alt="Planta de 2 quartos com suíte e varanda" loading="lazy"></div>
+        <div class="bd"><h3>2 quartos com suíte</h3><span class="m">59 m² com varanda</span><p>Suíte, banheiro social e varanda com guarda-corpo de vidro.</p><button class="btn btn-b js-plan" data-plan="2 quartos com suíte">Quero esta planta</button></div></article>
+      <article class="pc rv"><div class="pimg" data-zoom="assets/img/pl-3q-suite-varanda-7160.jpg" data-cap="3 quartos com suíte e varanda · 71,60 m² (planta ilustrativa)"><img src="assets/img/pl-3q-suite-varanda-7160.jpg" alt="Planta de 3 quartos com suíte, 71,60 m²" loading="lazy"></div>
+        <div class="bd"><h3>3 quartos com suíte</h3><span class="m">71,60 m² com varanda</span><p>Suíte, varanda e um quarto reversível para home office.</p><button class="btn btn-b js-plan" data-plan="3 quartos com suíte">Quero esta planta</button></div></article>
+      <article class="pc rv"><div class="pimg" data-zoom="assets/img/pl-3q-suite-varanda-7475.jpg" data-cap="3 quartos com suíte e varanda · 74,75 m² (planta ilustrativa)"><img src="assets/img/pl-3q-suite-varanda-7475.jpg" alt="Planta de 3 quartos com suíte, 74,75 m²" loading="lazy"></div>
+        <div class="bd"><h3>3 quartos com suíte</h3><span class="m">74,75 m² com varanda</span><p>A maior planta, com sala ampla e varanda.</p><button class="btn btn-b js-plan" data-plan="3 quartos com suíte">Quero esta planta</button></div></article>
+    </div>
+    <p class="fine" style="margin-top:14px">Plantas humanizadas ilustrativas. Há opção de unidade adaptada para PCD. Móveis e decoração não fazem parte do contrato.</p>
+  </div>
+</section>
+
+<!-- 4. LAZER -->
+<section class="lazer" id="lazer">
+  <div class="wrap">
+    <div class="head">
+      <span class="tag rv">Residencial clube</span>
+      <h2 class="title rv">Lazer completo, pensado para <span class="hl">todos os seus momentos.</span></h2>
+    </div>
+    <div class="lzg" data-gallery>
+      <article class="lzc big rv"><button class="pic" data-cap="Piscinas adulto e infantil com solarium (perspectiva ilustrativa)"><img src="assets/img/piscina.jpg" alt="Piscinas adulto e infantil" loading="lazy"></button><div class="bd"><h3>Piscinas adulto e infantil</h3><p>Com solarium e fechamento em vidro.</p></div></article>
+      <article class="lzc big rv"><button class="pic" data-cap="Espaço gourmet climatizado (perspectiva ilustrativa)"><img src="assets/img/gourmet.jpg" alt="Espaço gourmet" loading="lazy"></button><div class="bd"><h3>Espaço gourmet climatizado</h3><p>Para receber a família com conforto.</p></div></article>
+      <article class="lzc rv"><button class="pic" data-cap="Salão de festas climatizado (perspectiva ilustrativa)"><img src="assets/img/salao-festas.jpg" alt="Salão de festas" loading="lazy"></button><div class="bd"><h3>Salão de festas</h3><p>Entregue climatizado.</p></div></article>
+      <article class="lzc rv"><button class="pic" data-cap="Academia climatizada (perspectiva ilustrativa)"><img src="assets/img/academia.jpg" alt="Academia" loading="lazy"></button><div class="bd"><h3>Academia</h3><p>Mobiliada e climatizada.</p></div></article>
+      <article class="lzc rv"><button class="pic" data-cap="Churrasqueira (perspectiva ilustrativa)"><img src="assets/img/churrasqueira.jpg" alt="Churrasqueira" loading="lazy"></button><div class="bd"><h3>Churrasqueira</h3><p>E espaço grill ao lado.</p></div></article>
+      <article class="lzc rv"><button class="pic" data-cap="Quadra recreativa (perspectiva ilustrativa)"><img src="assets/img/quadra.jpg" alt="Quadra recreativa" loading="lazy"></button><div class="bd"><h3>Quadra recreativa</h3><p>Futebol e basquete em casa.</p></div></article>
+    </div>
+    <p class="more rv"><b>E ainda:</b> espaço fit, espaço pet, Parque da Cora, lounge coberto e espaço para mercadinho. Energia solar no lazer e LED nas áreas comuns.</p>
+  </div>
+</section>
+
+<!-- 5. LOCALIZAÇÃO -->
+<section id="localizacao">
+  <div class="wrap">
+    <div class="loc">
+      <div class="ph rv" data-zoom="assets/img/localizacao.jpg" data-cap="Vista aérea: o Morada Vitória ao lado da reserva, com Jardim Camburi e o mar ao fundo"><img src="assets/img/localizacao.jpg" alt="Vista aérea do Morada Vitória ao lado da reserva verde, com Jardim Camburi e o mar ao fundo" loading="lazy"></div>
+      <div>
+        <span class="tag rv">Localização</span>
+        <h2 class="title rv">Localização estratégica, <span class="hl">perto de tudo o que importa.</span></h2>
+        <ul class="near rv">
+          <li><span class="ic">🌊</span><div><b>Orla de Camburi a 5 minutos</b></div></li>
+          <li><span class="ic">🌳</span><div><b>Vista para a reserva</b><small>muito verde ao redor do residencial</small></div></li>
+          <li><span class="ic">🛍️</span><div><b>A 300 m de Jardim Camburi</b><small>Shopping Norte Sul, supermercados, farmácias e praia</small></div></li>
+          <li><span class="ic">🏫</span><div><b>Colégio Salesiano e Santuário de Fátima</b></div></li>
+        </ul>
+        <p class="addr rv">📍 Rua Henrique Mendonça Martins Rato, nº 195, Bairro de Fátima, Serra/ES</p>
+        <a class="btn btn-line rv" href="https://www.google.com/maps/dir/?api=1&destination=Rua+Henrique+Mendon%C3%A7a+Martins+Rato+195+Bairro+de+F%C3%A1tima+Serra+ES" target="_blank" rel="noopener">Traçar rota</a>
+      </div>
+    </div>
+    <div class="orla rv" data-zoom="assets/img/orla-camburi.jpg" data-cap="Fim de tarde na orla de Camburi"><img src="assets/img/orla-camburi.jpg" alt="Família caminhando na orla de Camburi ao entardecer" loading="lazy"><span>O fim de tarde na orla, a 5 minutos de casa.</span></div>
+  </div>
+</section>
+
+<!-- 6. CADASTRO -->
+<section class="cad" id="simulacao">
+  <div class="wrap cad-grid">
+    <div>
+      <span class="tag rv">Porque no final do dia, o que você quer é viver bem</span>
+      <h2 class="title rv">Receba a tabela, as plantas <span class="hl">e a sua condição.</span></h2>
+      <ol class="steps rv">
+        <li><span><b>Você deixa seus dados</b>: leva menos de 1 minuto</span></li>
+        <li><span><b>A Luz Imóveis envia</b> tabela, plantas e simulação do financiamento</span></li>
+        <li><span><b>Você agenda uma visita</b> e escolhe a sua unidade</span></li>
+      </ol>
+      <div class="cad-luz rv"><img src="assets/img/logo-luz.png" alt="Luz Imóveis" loading="lazy"><p><b>Atendimento Luz Imóveis</b>Do primeiro contato até a entrega das chaves.</p></div>
+    </div>
+    <div class="form rv" id="cadastro">
+      <span class="ribbon">Atendimento Luz Imóveis</span>
+      <form id="lead-form" novalidate>
+        <h2>Quero conhecer o Morada Vitória</h2>
+        <p class="hint">Um consultor da Luz Imóveis entra em contato com a tabela atualizada e as unidades disponíveis.</p>
+        <div class="f"><label for="f-nome">Nome completo *</label><input id="f-nome" name="nome" autocomplete="name" placeholder="Seu nome completo" required></div>
+        <div class="f"><label for="f-email">E-mail *</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="seu@email.com" required></div>
+        <div class="f"><label for="f-tel">WhatsApp *</label><input id="f-tel" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(27) 99999-9999" required></div>
+        <div class="f"><label for="f-planta">Tipologia de interesse</label>
+          <select id="f-planta" name="planta"><option>Ainda estou decidindo</option><option>2 quartos com suíte</option><option>3 quartos com suíte</option></select></div>
+        <input type="hidden" name="origem"><input type="hidden" name="pagina">
+        <button class="btn btn-o" type="submit" id="f-btn">Falar com um consultor →</button>
+        <p class="err" id="f-err" role="alert"></p>
+        <p class="fine">Seus dados ficam só com a Luz Imóveis. Isso não é uma solicitação de crédito.</p>
+      </form>
+      <div class="done" role="status">
+        <div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg></div>
+        <h2>Recebemos seus dados!</h2>
+        <p>Obrigado, <strong id="done-nome"></strong>. Um consultor da Luz Imóveis vai entrar em contato em breve com a tabela e as plantas.</p>
+        <p class="fine" id="test-note" hidden style="margin-top:12px;color:var(--orange-d)">Modo de teste: o noCRM ainda não está conectado, então este cadastro não foi enviado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. DÚVIDAS -->
+<section id="faq" style="padding-top:56px">
+  <div class="wrap">
+    <div class="head" style="text-align:center">
+      <h2 class="title rv" style="margin-inline:auto">Dúvidas frequentes</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Qual a entrada e a renda para comprar?</summary><p>A entrada começa em 10% do valor do imóvel, e o saldo pode ser financiado pelo banco. A renda familiar indicada é a partir de R$ 18 mil, e pode ser somada com outra pessoa. A aprovação depende da análise de crédito.</p></details>
+      <details><summary>Onde fica o Morada Vitória?</summary><p>Na Rua Henrique Mendonça Martins Rato, 195, no Bairro de Fátima, na Serra, a 300 metros de Jardim Camburi e a cerca de 5 minutos da orla de Camburi.</p></details>
+      <details><summary>Quantos apartamentos e quais tamanhos?</summary><p>São 240 apartamentos em 2 torres de 10 andares, com plantas de 59,26 m² a 74,75 m²: 2 quartos com suíte e 3 quartos com suíte (um deles reversível), todos com varanda. Cada unidade tem 1 vaga, e há vagas extras à venda no subsolo.</p></details>
+      <details><summary>Quem constrói?</summary><p>A Morar Construtora e Incorporadora. O Morada Vitória faz parte da linha premium da Morar.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="logos"><span class="lw"><img src="assets/img/logo-luz.png" alt="Luz Imóveis" loading="lazy"></span><span class="mv"><b>MORADA</b><small>VITÓRIA</small></span></div>
+      <div class="ct">Luz Imóveis<small>Atendimento e comercialização do Morada Vitória</small></div>
+    </div>
+    <p>Morada Vitória Residencial Clube · Rua Henrique Mendonça Martins Rato, nº 195, Bairro de Fátima, Serra/ES, 29160-734. Projeto arquitetônico: Morar Construtora e Incorporadora Ltda e Lucas Weber. Incorporadora responsável: Morada Vitória Empreendimentos Imobiliários SPE Ltda. Projeto aprovado pela Prefeitura Municipal da Serra sob o processo nº 49760/2022 em 13/05/2025. Memorial de Incorporação registrado no Cartório do 1º Ofício da 2ª Zona da Serra sob o nº 115.107 do Livro nº 02, em 25/08/2025.</p>
+    <p>Imagens, perspectivas e plantas ilustrativas, sujeitas a alterações. Decoração e mobiliário não fazem parte do contrato. Acabamentos conforme Memorial Descritivo. Entrada a partir de 10% e renda familiar a partir de R$ 18 mil, sujeitas à análise e aprovação de crédito, à disponibilidade de unidades e a alterações sem aviso prévio. Tempo de deslocamento aproximado, conforme trânsito.</p>
+  </div>
+</footer>
+
+<div class="bar" id="bar"><a class="btn btn-o" href="#cadastro">Quero receber a tabela</a></div>
+
+<a class="wa" id="wa" href="#" target="_blank" rel="noopener" aria-label="Tirar dúvidas pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.38 9.38 0 0 1-1.44-5.01c0-5.19 4.23-9.42 9.43-9.42a9.37 9.37 0 0 1 9.42 9.43c0 5.2-4.23 9.42-9.42 9.42zm8.02-17.44A11.27 11.27 0 0 0 12.05.75C5.8.75.7 5.84.7 12.1c0 2 .52 3.95 1.52 5.67L.6 23.65l6.02-1.58a11.33 11.33 0 0 0 5.42 1.38h.01c6.25 0 11.34-5.09 11.35-11.35 0-3.03-1.18-5.88-3.33-8.03z"/></svg>
+</a>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+  <button class="x" type="button" aria-label="Fechar">×</button>
+  <button class="pv" type="button" aria-label="Anterior">‹</button>
+  <img alt="">
+  <button class="nx" type="button" aria-label="Próxima">›</button>
+  <div class="cap"></div>
+</div>
+
+<script>
+/* ===================== CONFIGURAÇÃO =====================
+   WHATSAPP: número só para dúvidas e informações.
+   WEBHOOK_NOCRM: o mesmo webhook do Make usado no Vista do Arvoredo.
+   EMPREENDIMENTO e LEAD_TAGS identificam de qual página veio o lead no noCRM.
+   Nunca coloque a chave de API do noCRM aqui: este arquivo é público. */
+const WHATSAPP = '5527999947377';
+const WEBHOOK_NOCRM = 'https://hook.us2.make.com/mc6w50xihn2jrl1wugx52fettev0hf4b';
+const EMPREENDIMENTO = 'Morada Vitória';
+const LEAD_TAGS = 'Morada Vitória';
+/* ======================================================== */
+
+document.getElementById('wa').href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Olá! Estou vendo o Morada Vitória no site da Luz Imóveis e tenho uma dúvida.')}`;
+
+const form = document.getElementById('lead-form');
+const box = document.getElementById('cadastro');
+const goForm = () => { box.scrollIntoView({behavior:'smooth', block:'center'}); setTimeout(() => form.nome.focus({preventScroll:true}), 600); };
+
+const q = new URLSearchParams(location.search);
+form.origem.value = ['utm_source','utm_medium','utm_campaign','utm_content'].map(k => q.get(k)).filter(Boolean).join(' | ') || 'direto';
+form.pagina.value = location.href.split('?')[0];
+
+const tel = form.telefone;
+tel.addEventListener('input', () => {
+  const d = tel.value.replace(/\D/g,'').slice(0,11);
+  tel.value = d.length > 6 ? `(${d.slice(0,2)}) ${d.slice(2,d.length-4)}-${d.slice(-4)}` : d.length > 2 ? `(${d.slice(0,2)}) ${d.slice(2)}` : d;
+});
+
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  const err = document.getElementById('f-err'), btn = document.getElementById('f-btn');
+  const checks = [[form.nome, form.nome.value.trim().length > 2], [form.email, /^\S+@\S+\.\S+$/.test(form.email.value.trim())],
+                  [tel, tel.value.replace(/\D/g,'').length >= 10]];
+  checks.forEach(([el, ok]) => el.closest('.f').classList.toggle('bad', !ok));
+  const bad = checks.find(([, ok]) => !ok);
+  if (bad) { err.textContent = 'Confira os campos destacados: nome, e-mail e WhatsApp com DDD.'; err.style.display = 'block'; bad[0].focus(); return; }
+  err.style.display = 'none';
+  btn.disabled = true; btn.textContent = 'Enviando...';
+  const lead = Object.fromEntries(new FormData(form));
+  const nome = lead.nome.trim();
+  Object.assign(lead, {
+    telefone_numeros: '55' + tel.value.replace(/\D/g,''),
+    empreendimento: EMPREENDIMENTO,
+    data_hora: new Date().toLocaleString('pt-BR'),
+    tags: LEAD_TAGS,
+    titulo: `${nome} · ${EMPREENDIMENTO}`,
+    descricao: [`Nome: ${nome}`, `E-mail: ${lead.email}`, `WhatsApp: ${lead.telefone}`, `Tipologia: ${lead.planta}`,
+                `Empreendimento: ${EMPREENDIMENTO}`, `Origem: ${lead.origem}`, `Data: ${new Date().toLocaleString('pt-BR')}`].join('\n')
+  });
+  try {
+    if (WEBHOOK_NOCRM) {
+      await fetch(WEBHOOK_NOCRM, {method:'POST', mode:'no-cors', body:new URLSearchParams(lead)});
+    } else {
+      console.warn('WEBHOOK_NOCRM vazio: modo de teste, o lead NÃO foi enviado.', lead);
+      document.getElementById('test-note').hidden = false;
+    }
+    document.getElementById('done-nome').textContent = nome.split(' ')[0];
+    box.classList.add('sent');
+    if (window.fbq) fbq('track', 'Lead');
+    if (window.gtag) gtag('event', 'generate_lead');
+  } catch (x) {
+    console.error(x);
+    err.textContent = 'Não conseguimos enviar agora. Tente de novo em instantes.';
+    err.style.display = 'block';
+    btn.disabled = false; btn.textContent = 'Falar com um consultor →';
+  }
+});
+
+document.querySelectorAll('.js-plan').forEach(b => b.addEventListener('click', () => { form.planta.value = b.dataset.plan; goForm(); }));
+
+const bar = document.getElementById('bar');
+let pastHero = false, nearForm = false;
+const syncBar = () => { const on = pastHero && !nearForm; bar.classList.toggle('on', on); document.body.classList.toggle('bar-on', on); };
+new IntersectionObserver(([en]) => { pastHero = !en.isIntersecting && en.boundingClientRect.top < 0; syncBar(); }).observe(document.querySelector('.hero .cta-row'));
+new IntersectionObserver(([en]) => { nearForm = en.isIntersecting; syncBar(); }).observe(document.getElementById('simulacao'));
+
+document.querySelectorAll('.rail-nav button').forEach(b => b.addEventListener('click', () => {
+  const r = document.getElementById(b.dataset.rail); r.scrollBy({left: b.dataset.dir * r.clientWidth * .8, behavior:'smooth'});
+}));
+
+const vid = document.getElementById('tour');
+new IntersectionObserver(([en]) => en.isIntersecting ? vid.play().catch(()=>{}) : vid.pause(), {threshold:.5}).observe(vid);
+
+const lb = document.getElementById('lb'), lbImg = lb.querySelector('img'), lbCap = lb.querySelector('.cap');
+let set = [], idx = 0;
+const show = () => { lbImg.src = set[idx].src; lbImg.alt = set[idx].cap; lbCap.textContent = set[idx].cap; };
+const openLb = (items, i) => { set = items; idx = i; show(); lb.classList.add('on'); document.body.style.overflow = 'hidden'; };
+const closeLb = () => { lb.classList.remove('on'); document.body.style.overflow = ''; };
+document.querySelectorAll('[data-gallery]').forEach(g => {
+  const pics = [...g.querySelectorAll('.pic')];
+  pics.forEach(p => p.addEventListener('click', () => openLb(pics.map(x => ({src:x.querySelector('img').src, cap:x.dataset.cap})), pics.indexOf(p))));
+});
+document.querySelectorAll('[data-zoom]').forEach(el => el.addEventListener('click', () => openLb([{src:el.dataset.zoom, cap:el.dataset.cap}], 0)));
+lb.querySelector('.x').onclick = closeLb;
+lb.querySelector('.pv').onclick = () => { idx = (idx - 1 + set.length) % set.length; show(); };
+lb.querySelector('.nx').onclick = () => { idx = (idx + 1) % set.length; show(); };
+lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+addEventListener('keydown', e => {
+  if (!lb.classList.contains('on')) return;
+  if (e.key === 'Escape') closeLb();
+  if (e.key === 'ArrowLeft') lb.querySelector('.pv').click();
+  if (e.key === 'ArrowRight') lb.querySelector('.nx').click();
+});
+
+const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }), {threshold:.1});
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
